@@ -1,7 +1,9 @@
-import { makeHomePage } from "./home-page";
+import { createHomePage } from "./home-page";
 
 const pageLoad = () => {
-    makeHomePage()
+    createHomePage()
 }
+
+
 
 export default pageLoad;

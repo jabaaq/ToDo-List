@@ -12,16 +12,4 @@ const createHomePage = () => {
     openedTab.appendChild(addTaskBtn)
 }
 
-
-
-// let moduleEvents = (function () {
-//     const addTaskBtn = document.querySelector('.add-task-btn'),
-//         closeModalBtn = document.querySelector('.close-btn');
-//     console.log(closeModal);
-
-//     addTaskBtn.addEventListener('click', () => {
-//         openModal()
-//     })
-// }())
-
 export { createHomePage }

@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/img/3208723.png" type="image/x-icon">
+    <title>ToDo List</title>
 </head>
 
 <body>
-
     <div class="content">
-        <div class="sidebar-header">ToDo List</div>
+        <div class="sidebar-header">
+            <img src="/img/logo.png" width="70px" alt="" srcset="">
+            <h5 class="header-title">ToDo List</h5>
+        </div>
         <div class="opened-tab">
             <div class="opened-tab-content">
             </div>
@@ -23,12 +26,15 @@
                         <input type="text" class="inputFIeld" id="title" placeholder="Title" maxlength="40">
                         <input type="text" class="inputFIeld" id="description" placeholder="Description" maxlength="40">
                         <input type="date" class="inputFIeld" name="dueDate" id="dueDate">
-                        <button id="clear-btn">Clear form</button>
-                        <button id="submit-btn" type="submit">Add</button>
+                        <div class="field-buttons">
+                            <button id="clear-btn">Clear</button>
+                            <button id="submit-btn" type="submit">Add</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
+
         <div class="main-content">
             <div class="page-grid">
                 <div class="added-task">
@@ -45,7 +51,9 @@
             </div>
         </div>
     </div>
-
+    <div class="modal-container hide">
+        <div class="modal">a</div>
+    </div>
 
     <script src="/dist/main.js"></script>
 </body>

@@ -20,5 +20,9 @@ function checkForm() {
     }
 }
 
+// function openModal(text) {
+
+// }
+
 
 export { clearForm, checkForm }

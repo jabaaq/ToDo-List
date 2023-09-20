@@ -12,7 +12,7 @@ body {
 .content {
     display: grid;
     height: 100vh;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: 15% 85%;
 }
 
@@ -22,7 +22,7 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .sidebar-header {
@@ -30,6 +30,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 
 .opened-tab {
     display: flex;
@@ -47,6 +48,11 @@ body {
 
 .tab-header {
     font-size: 40px;
+    color: #2564CF;
+}
+
+.main-content {
+    height: 100vh;
 }
 
 .page-grid {
@@ -55,14 +61,15 @@ body {
     grid-template-rows: repeat(auto-fill, minmax(25px, 1fr));
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     /* gap: 50px; */
-    background-color: rgba(255, 127, 80, 0.998);
+    background-color: #FAF9F8;
     min-height: 100%;
     padding-bottom: 20px;
+    box-shadow: inset -5px 1px 34px -3px rgba(0, 0, 0, 0.1);
 }
 
 .added-task {
     justify-self: center;
-    width: 1050px;
+    width: 85%;
     height: 45px;
     background-color: white;
     border-radius: 7px;
@@ -85,14 +92,6 @@ body {
     font-size: 12px;
 }
 
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
 
 .form-box {
     height: 300px;
@@ -106,6 +105,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 15px;
 }
 
 .task-checkbox {
@@ -115,4 +115,108 @@ body {
 
 .inputFIeld {
     width: 200px;
+    height: 30px;
+    border: solid 1px #2564CF;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+.inputFIeld:focus {
+    border: 2px solid #005eff;
+}
+
+.field-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+}
+
+.field-buttons button {
+    width: 60px;
+    height: 30px;
+}
+
+#clear-btn {
+    background-color: rgb(210, 202, 202);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.remove-btn {
+    background-color: rgb(224, 218, 218);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 60px;
+    height: 30px;
+}
+
+.remove-btn:hover {
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+
+#clear-btn:hover {
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+#clear-btn:active {
+    transform: scale(1.01);
+}
+
+#submit-btn {
+    background-color: #2564CF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#submit-btn:hover {
+    background-color: #1a3f7e;
+    cursor: pointer;
+}
+
+#submit-btn:active {
+    transform: scale(1.01);
+}
+
+.modal-container {
+    min-height: 100;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #0101022e;
+    top: 1px;
+    right: 1px;
+}
+
+.modal {
+    z-index: 9;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .35);
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
 }
